@@ -1,0 +1,58 @@
+module.exports = {
+	name: "TestProjectName",
+	modules:[
+		{
+			name:"posts",
+			inputs:[
+				{
+					"name":"Title",
+					"source":"title",
+					"type":"string"
+				},
+				{
+					"name":"Brand",
+					"source":"brand",
+					"type":"string"
+				},
+				{
+					"name":"Link",
+					"source":"link"
+					"type":{
+
+					}
+				},
+				{
+					"name":"Category",
+					"source":"category",
+					"type":"dropdown"
+				},
+				{
+					"name":"Description",
+					"source":"description",
+					"type":"textarea"
+				},
+				{
+					"name":"Photos",
+					"source":"photos",
+					"type":"gallery"
+				}
+			],
+			menu:[
+				{
+					"name":"save",
+					"enable":true,
+				},
+				{
+					"name":"delete",
+					"enable":true
+				},
+				{
+					"name":"visibility",
+					"enable":true
+				}
+			]
+		}
+			
+		}
+	]
+}
